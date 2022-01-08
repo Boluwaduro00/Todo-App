@@ -14,18 +14,27 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: "Inter";
-  box-sizing: border-box;
 
-  min-height: 100vh;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  body {
+    font-family: "Inter";
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--black);
+  }
 
-  color: var(--white);
-  background-color: var(--black);
-}
+  @media screen and (max-width: 400px) {
+    body {
+      display: grid;
+      padding: 10px;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+
 
 .todo-app {
   margin-top: 50px;
@@ -47,17 +56,6 @@ header {
   padding-left: 0;
   list-style: none;
 }
-
-/* .new-todo form{
-  display: flex;
-  flex-flow: column-nowrap;
-} */
-
-/* .todo-form {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-} */
 
 .new-todo label {
   font-weight: 500;
