@@ -25,6 +25,7 @@ body {
     color: var(--white);
     background-color: var(--black);
   }
+  
 
   @media screen and (max-width: 400px) {
     body {
